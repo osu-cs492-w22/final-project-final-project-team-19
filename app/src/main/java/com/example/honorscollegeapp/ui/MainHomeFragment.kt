@@ -6,8 +6,6 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -24,21 +22,17 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 
 const val GOOGLE_API_KEY = "AIzaSyDjwke8tWWu_-CSsA7pev_G8OqTALsaAKs"
 
-/* Rest of onCreate body */
-//private val mainAdapter = MainActivityAdapter(::onClick)
-//private val viewModel: MainActivityViewModel by viewModels()
-private lateinit var searchBoxET: EditText
-private lateinit var searchResultsListRV: RecyclerView
-private lateinit var searchErrorTV: TextView
-private lateinit var loadingIndicator: CircularProgressIndicator
-/* Rest of onCreate body */
-
 class MainHomeFragment : Fragment(R.layout.main_home) {
     private lateinit var requestQueue: RequestQueue
     private val apiBaseUrl = "https://www.googleapis.com/"
     private val calendarId = "dlme32b3csk7fjb1dpn9nhv5g8@group.calendar.google.com"
     private val mainAdapter = CalendarAdapter(::onEventClick)
-    //private val viewModel: CalendarViewModel by viewModels()
+
+    private lateinit var searchBoxET: EditText
+    private lateinit var searchResultsListRV: RecyclerView
+    private lateinit var searchErrorTV: TextView
+    private lateinit var loadingIndicator: CircularProgressIndicator
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -50,6 +44,8 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
         searchResultsListRV.layoutManager = LinearLayoutManager(requireContext())
         searchResultsListRV.setHasFixedSize(true)
         searchResultsListRV.adapter = mainAdapter
+
+
 
 //        viewModel.searchResults.observe(viewLifecycleOwner) { searchResults ->
 //            mainAdapter.updateEventList(searchResults)

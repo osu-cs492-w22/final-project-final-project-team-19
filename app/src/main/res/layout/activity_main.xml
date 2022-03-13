@@ -17,12 +17,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-<!--            <androidx.appcompat.widget.Toolbar-->
-<!--                android:id="@+id/toolbar"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="?attr/colorPrimary"-->
-<!--                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"/>-->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/nav_host_fragment"
@@ -39,22 +39,7 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="end"
+        android:layout_gravity="start"
         app:menu="@menu/profile_nav_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
-
-
-<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--    android:id="@+id/coordinator_layout"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        android:id="@+id/fragment_container"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:name="com.example.honorscollegeapp.ui.HonorsCollegeAppFragment" />-->
-<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
-
-

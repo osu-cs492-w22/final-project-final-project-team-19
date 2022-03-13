@@ -10,11 +10,19 @@
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/type_icon.xml" value="0.173" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/event_card.xml" value="0.25" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/event_detail.xml" value="0.1526268115942029" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/honors_college_app.xml" value="0.19067028985507245" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/main_home.xml" value="0.22" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/main_registered.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/myprofile.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/settings.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/menu/event_search_bar.xml" value="0.22" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/menu/menu.xml" value="0.22" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/menu/profile_nav_drawer.xml" value="0.26871794871794874" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/menu/searchable.xml" value="1.053125" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1035" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1035" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/xml/searchable.xml" value="0.1526268115942029" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/honors_college_app.xml" value="0.2558876811594203" />
       </map>
