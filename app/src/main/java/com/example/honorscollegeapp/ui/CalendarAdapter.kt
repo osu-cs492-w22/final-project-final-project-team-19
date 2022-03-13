@@ -3,6 +3,7 @@ package com.example.honorscollegeapp.ui
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.honorscollegeapp.R
 import com.example.honorscollegeapp.data.*
@@ -33,11 +34,9 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
     class ViewHolder(itemView: View, val onClick: (CalendarEvent) -> Unit)
         : RecyclerView.ViewHolder(itemView) {
 
-        /*
-        Insert xml data-holder references here:
-
+        private val nameTV: TextView = itemView.findViewById(R.id.tv_name)
         private val dateTV: TextView = itemView.findViewById(R.id.tv_date)
-        */
+        private val descTV: TextView = itemView.findViewById(R.id.tv_desc)
 
         private var currentEvent: CalendarEvent? = null
 
@@ -52,11 +51,9 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
 
             val ctx = itemView.context
 
-            /*
-            Insert data into viewholder objects here:
-
-            dateTV.text = ctx.getString(R.string.forecast_date, date)
-            */
+            nameTV.text = calendarEvent.summary
+            dateTV.text = calendarEvent.start.dateTime
+            descTV.text = calendarEvent.description
         }
     }
 }
