@@ -77,5 +77,4 @@
             app:drawableTint="@color/black" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </com.google.android.material.card.MaterialCardView>

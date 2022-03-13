@@ -50,5 +50,4 @@ tools:context=".ui.MainHomeFragment">
             android:visibility="invisible" />
 
     </FrameLayout>
-
 </LinearLayout>
