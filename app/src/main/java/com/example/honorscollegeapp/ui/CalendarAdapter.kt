@@ -13,8 +13,8 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
     : RecyclerView.Adapter<CalendarAdapter.ViewHolder>() {
     var calendarEvents: List<CalendarEvent> = listOf()
 
-    fun updateForecast(events: Calendar?) {
-        calendarEvents = events?.items ?: listOf()
+    fun updateEventList(events: List<CalendarEvent>?) {
+        calendarEvents = events?: listOf()
         notifyDataSetChanged()
     }
 

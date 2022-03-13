@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -15,6 +16,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.honorscollegeapp.R
 import com.example.honorscollegeapp.data.Calendar
+import com.example.honorscollegeapp.data.CalendarEvent
 import com.google.android.material.progressindicator.CircularProgressIndicator
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
@@ -35,6 +37,8 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
     private lateinit var requestQueue: RequestQueue
     private val apiBaseUrl = "https://www.googleapis.com/"
     private val calendarId = "dlme32b3csk7fjb1dpn9nhv5g8@group.calendar.google.com"
+    private val mainAdapter = CalendarAdapter(::onEventClick)
+    //private val viewModel: CalendarViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -45,9 +49,10 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
         loadingIndicator = view.findViewById(R.id.loading_indicator)
         searchResultsListRV.layoutManager = LinearLayoutManager(requireContext())
         searchResultsListRV.setHasFixedSize(true)
-//        searchResultsListRV.adapter = mainAdapter
+        searchResultsListRV.adapter = mainAdapter
+
 //        viewModel.searchResults.observe(viewLifecycleOwner) { searchResults ->
-//            mainAdapter.updateRepoList(searchResults)
+//            mainAdapter.updateEventList(searchResults)
 //        }
 //        viewModel.loadingStatus.observe(viewLifecycleOwner) { uiState ->
 //            when (uiState) {
@@ -68,6 +73,7 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
 //                }
 //            }
 //        }
+
         /* Rest of onCreate body */
 
         requestQueue = Volley.newRequestQueue(requireContext())
@@ -90,6 +96,7 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
             {
                 Log.d("MainActivity", it)
                 val results = jsonAdapter.fromJson(it)
+                mainAdapter.updateEventList(results?.items)
             },
             {
                 Log.d(
@@ -99,5 +106,8 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
             }
         )
         requestQueue.add(req);
+    }
+
+    private fun onEventClick(event: CalendarEvent) {
     }
 }
