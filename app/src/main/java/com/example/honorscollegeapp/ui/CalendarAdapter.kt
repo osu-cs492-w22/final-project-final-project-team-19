@@ -21,7 +21,7 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.event_list_item, parent, false) //event_list_item xml needs to be created
+            .inflate(R.layout.event_card, parent, false) //event_list_item xml needs to be created
         return ViewHolder(view, onClick)
     }
 
