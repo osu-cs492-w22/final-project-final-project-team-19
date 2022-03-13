@@ -31,7 +31,7 @@ private lateinit var searchErrorTV: TextView
 private lateinit var loadingIndicator: CircularProgressIndicator
 /* Rest of onCreate body */
 
-class HonorsCollegeAppFragment : Fragment(R.layout.main_home) {
+class MainHomeFragment : Fragment(R.layout.main_home) {
     private lateinit var requestQueue: RequestQueue
     private val apiBaseUrl = "https://www.googleapis.com/"
     private val calendarId = "dlme32b3csk7fjb1dpn9nhv5g8@group.calendar.google.com"
