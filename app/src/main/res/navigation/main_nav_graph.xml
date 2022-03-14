@@ -41,6 +41,12 @@
 <!--        android:label="@string/label_logout">-->
 <!--    </fragment>-->
 
+    <fragment android:id="@+id/home"
+        android:name="com.example.honorscollegeapp.ui.MainHomeFragment"
+        android:label="@string/label_main_home"
+        tools:layout="@layout/main_home">
+    </fragment>
+
     <fragment android:id="@+id/calendar"
         android:name="com.example.honorscollegeapp.ui.CalendarFragment"
         android:label="@string/label_calendar"

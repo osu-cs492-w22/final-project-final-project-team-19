@@ -4,13 +4,31 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2315" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_calendar_icon.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_calendar_icon_alt.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_calendar_icon_norm.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_home_icon.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_home_icon_alt.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_home_icon_norm.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_notifications_icon.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_notifications_icon_alt.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_ic_notifications_icon_norm.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_calendar_icon.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_home_icon.xml" value="0.1" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2315" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_notifications_icon.xml" value="0.1" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_profile_icon.xml" value="0.1" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_search.xml" value="0.163" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/ic_settings_icon.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/menu_bottom_calendar_state.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/menu_bottom_notifs_state.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/menu_bottom_state.xml" value="0.1" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/round_outline.xml" value="0.163" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/top_ic_profile_icon.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/top_ic_settings_icon.xml" value="0.1" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/drawable/type_icon.xml" value="0.173" />
-        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/bottom_nav.xml" value="0.14492753623188406" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/calendar.xml" value="0.14492753623188406" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/event_card.xml" value="0.25" />
@@ -19,6 +37,7 @@
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/main_event_card.xml" value="0.14492753623188406" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/main_home.xml" value="0.25" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/main_registered.xml" value="0.25" />
+        <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/main_toolbar.xml" value="0.5263157894736842" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/myprofile.xml" value="0.25" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/nav_drawer.xml" value="0.14492753623188406" />
         <entry key="..\:/Users/ajpro/Desktop/OSU/CS 492/final-project-final-project-team-19/app/src/main/res/layout/nav_header.xml" value="0.1526268115942029" />
