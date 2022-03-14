@@ -9,6 +9,9 @@
         android:name="com.example.honorscollegeapp.ui.MainHomeFragment"
         android:label="@string/label_main_home"
         tools:layout="@layout/main_home">
+        <action
+            android:id="@+id/navigate_to_event_detail"
+            app:destination="@id/event_detail" />
     </fragment>
 
     <fragment android:id="@+id/main_registered"
@@ -21,6 +24,10 @@
         android:name="com.example.honorscollegeapp.ui.EventDetailsFragment"
         android:label="@string/label_event_detail"
         tools:layout="@layout/page_event_detail">
+        <argument
+            android:name="event"
+            app:argType="com.example.honorscollegeapp.data.CalendarEvent"
+            />
     </fragment>
 
     <fragment android:id="@+id/myprofile"
