@@ -30,20 +30,14 @@ import java.util.*
 * https://stackoverflow.com/questions/56598480/couldnt-find-meta-data-for-provider-with-authority
 * */
 class MainActivity : AppCompatActivity() {
-    val REQUEST_IMAGE_CAPTURE = 1
     private val PERMISSION_REQUEST_CODE: Int = 101
-    private var mCurrentPhotoPath: String? = null;
-    lateinit var imageView: ImageView
-    lateinit var captureButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        imageView = findViewById(R.id.image_view)
-        captureButton = findViewById(R.id.btn_capture)
-        captureButton.setOnClickListener(View.OnClickListener {
-            if (checkPersmission()) takePicture() else requestPermission()
-        })
+
+        if (!checkPersmission()) requestPermission()
+
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
@@ -53,44 +47,12 @@ class MainActivity : AppCompatActivity() {
                 if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                     && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
 
-                    takePicture()
 
                 } else {
                     Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show()
                 }
                 return
             }
-
-            else -> {
-
-            }
-        }
-    }
-
-    private fun takePicture() {
-
-        val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        val file: File = createFile()
-        val uri = FileProvider.getUriForFile(Objects.requireNonNull(getApplicationContext()),
-            BuildConfig.APPLICATION_ID + ".provider", file);
-
-
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, uri)
-        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE)
-
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK) {
-
-            //To get the File for further usage
-            val auxFile = File(mCurrentPhotoPath)
-
-
-            var bitmap: Bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath)
-            imageView.setImageBitmap(bitmap)
-
         }
     }
 
@@ -104,18 +66,4 @@ class MainActivity : AppCompatActivity() {
         ActivityCompat.requestPermissions(this, arrayOf(READ_EXTERNAL_STORAGE, CAMERA), PERMISSION_REQUEST_CODE)
     }
 
-    @Throws(IOException::class)
-    private fun createFile(): File {
-        // Create an image file name
-        val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-        val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(
-            "JPEG_${timeStamp}_", /* prefix */
-            ".jpg", /* suffix */
-            storageDir /* directory */
-        ).apply {
-            // Save a file: path for use with ACTION_VIEW intents
-            mCurrentPhotoPath = absolutePath
-        }
-    }
 }
