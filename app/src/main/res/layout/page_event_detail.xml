@@ -22,8 +22,32 @@
 <!--    register_btn bottom center (bottom of description)-->
 
 
-
-
+    <TextView
+        android:id="@+id/tv_event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Title"/>
+    <TextView
+        android:id="@+id/tv_event_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Description"/>
+    <TextView
+        android:id="@+id/tv_event_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Location"/>
+    <TextView
+        android:id="@+id/tv_event_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Start"/>
+    <TextView
+        android:id="@+id/tv_event_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event End"/>
+f
 <!--    <TextView-->
 <!--        android:id="@+id/tv_repo_name"-->
 <!--        android:layout_width="wrap_content"-->
