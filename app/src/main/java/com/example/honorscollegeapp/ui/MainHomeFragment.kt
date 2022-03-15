@@ -1,11 +1,13 @@
 package com.example.honorscollegeapp.ui
 
 import android.os.Bundle
+import android.text.Layout
 import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -105,5 +107,7 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
     }
 
     private fun onEventClick(event: CalendarEvent) {
+        val directions = MainHomeFragmentDirections.navigateToEventDetail(event)
+        findNavController().navigate(directions)
     }
 }
