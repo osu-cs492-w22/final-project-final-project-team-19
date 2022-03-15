@@ -21,6 +21,10 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
+/* Taking photo within app
+* https://kotlincodes.com/kotlin/camera-intent-with-kotlin-android/
+* https://stackoverflow.com/questions/56598480/couldnt-find-meta-data-for-provider-with-authority
+* */
 class MyprofileFragment : Fragment(R.layout.page_myprofile) {
     val REQUEST_IMAGE_CAPTURE = 1
     private val PERMISSION_REQUEST_CODE: Int = 101
