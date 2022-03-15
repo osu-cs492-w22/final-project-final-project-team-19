@@ -1,5 +1,6 @@
 package com.example.honorscollegeapp.ui
 
+
 import android.Manifest.permission.CAMERA
 import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.app.Activity
@@ -24,6 +25,16 @@ import com.example.honorscollegeapp.R
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 import java.util.*
 /* Taking photo within app
 * https://kotlincodes.com/kotlin/camera-intent-with-kotlin-android/
@@ -31,12 +42,32 @@ import java.util.*
 * */
 class MainActivity : AppCompatActivity() {
     private val PERMISSION_REQUEST_CODE: Int = 101
+    lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         if (!checkPersmission()) requestPermission()
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        val navHostFragment: NavHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
+        appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        findViewById<NavigationView>(R.id.nav_top_view).setupWithNavController(navController)
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.nav_bottom_view)
+        bottomNavigationView.setupWithNavController(navController)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
