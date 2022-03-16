@@ -52,7 +52,7 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
             val ctx = itemView.context
 
             nameTV.text = calendarEvent.summary
-            dateTV.text = calendarEvent.start.dateTime
+            dateTV.text = calendarEvent.start.startdateTime
             descTV.text = calendarEvent.description
         }
     }

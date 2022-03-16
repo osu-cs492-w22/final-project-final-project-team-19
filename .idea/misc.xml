@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/GitHub/final-project-final-project-team-19/app/src/main/res/drawable/ic_action_bookmark_off.xml" value="0.2985" />
+        <entry key="..\:/Documents/GitHub/final-project-final-project-team-19/app/src/main/res/drawable/ic_action_bookmark_on.xml" value="0.2985" />
+        <entry key="..\:/Documents/GitHub/final-project-final-project-team-19/app/src/main/res/layout/main_event_card.xml" value="0.33106884057971014" />
+        <entry key="..\:/Documents/GitHub/final-project-final-project-team-19/app/src/main/res/layout/page_event_detail.xml" value="0.33106884057971014" />
+        <entry key="..\:/Documents/GitHub/final-project-final-project-team-19/app/src/main/res/menu/activity_event_detail.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2325" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2325" />
         <entry key="app/src/main/res/drawable/img_placehlder.xml" value="0.2985" />

@@ -16,4 +16,6 @@
     <string name="search_error">We were unable to execute your search.  Please check your internet connection and try again.</string>
     <string name="info">INFO</string>
 
+    <string name="action_bookmark">Register this Event</string>
+
 </resources>
