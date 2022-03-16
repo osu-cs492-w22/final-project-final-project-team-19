@@ -15,5 +15,5 @@ fun HonorsUtilsTime(startDateTime: String): String {
     if(dateArray[3].toInt() == 0){
         dateArray[3] = "12"
     }
-    return dateArray[3] + ":" + dateArray[4] + ampm
+    return dateArray[3] + ":" + dateArray[4] + " " + ampm
 }
