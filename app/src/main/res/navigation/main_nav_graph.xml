@@ -18,6 +18,9 @@
         android:name="com.example.honorscollegeapp.ui.MainRegisteredFragment"
         android:label="@string/label_main_registered"
         tools:layout="@layout/main_registered">
+        <action
+            android:id="@+id/navigate_to_event_detail"
+            app:destination="@id/event_detail" />
     </fragment>
 
     <fragment android:id="@+id/event_detail"
