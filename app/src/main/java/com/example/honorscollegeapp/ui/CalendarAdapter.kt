@@ -52,8 +52,8 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
             currentEvent = calendarEvent
 
             val ctx = itemView.context
-            val date = HonorsUtilsDate(calendarEvent.start.dateTime)
-            val time = HonorsUtilsTime(calendarEvent.start.dateTime)
+            val date = HonorsUtilsDate(calendarEvent.start.startdateTime)
+            val time = HonorsUtilsTime(calendarEvent.start.startdateTime)
 
             nameTV.text = calendarEvent.summary
             dateTV.text = date
