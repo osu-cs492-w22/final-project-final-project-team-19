@@ -29,8 +29,7 @@
         tools:layout="@layout/page_event_detail">
         <argument
             android:name="event"
-            app:argType="com.example.honorscollegeapp.data.CalendarEvent"
-            />
+            app:argType="com.example.honorscollegeapp.data.CalendarEvent" />
     </fragment>
 
     <fragment android:id="@+id/myprofile"
