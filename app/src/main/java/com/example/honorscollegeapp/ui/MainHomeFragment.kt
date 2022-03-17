@@ -1,5 +1,7 @@
 package com.example.honorscollegeapp.ui
 
+import android.app.SearchManager
+import android.content.Intent
 import android.os.Bundle
 import android.text.Layout
 import android.util.Log
@@ -78,7 +80,12 @@ class MainHomeFragment : Fragment(R.layout.main_home) {
         requestQueue = Volley.newRequestQueue(requireContext())
         doCalendarSearch(this.calendarId)
     }
-
+    fun searchWeb(query: String) {
+        val intent = Intent(Intent.ACTION_WEB_SEARCH).apply {
+            putExtra(SearchManager.QUERY, query)
+        }
+        startActivity(intent)
+    }
     private fun doCalendarSearch(calendarId: String){
         val url =
             "${apiBaseUrl}calendar/v3/calendars/${calendarId}/events?key=$GOOGLE_API_KEY"
