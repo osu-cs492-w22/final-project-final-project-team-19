@@ -65,5 +65,4 @@
         app:menu="@menu/menu_top"
         app:headerLayout="@layout/nav_top_header" />
 
-
 </androidx.drawerlayout.widget.DrawerLayout>
