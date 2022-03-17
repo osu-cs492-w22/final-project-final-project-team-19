@@ -1,5 +1,6 @@
 package com.example.honorscollegeapp.ui
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.honorscollegeapp.R
 import com.example.honorscollegeapp.data.*
-
+import com.example.honorscollegeapp.util.HonorsUtilsDate
+import com.example.honorscollegeapp.util.HonorsUtilsTime
 
 class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
     : RecyclerView.Adapter<CalendarAdapter.ViewHolder>() {
@@ -50,9 +52,11 @@ class CalendarAdapter(private val onClick: (CalendarEvent) -> Unit)
             currentEvent = calendarEvent
 
             val ctx = itemView.context
+            val date = HonorsUtilsDate(calendarEvent.start.startdateTime)
+            val time = HonorsUtilsTime(calendarEvent.start.startdateTime)
 
             nameTV.text = calendarEvent.summary
-            dateTV.text = calendarEvent.start.dateTime
+            dateTV.text = date
             descTV.text = calendarEvent.description
         }
     }

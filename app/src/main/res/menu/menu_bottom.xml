@@ -4,8 +4,8 @@
         android:title="@string/label_main_home"
         android:icon="@drawable/bottom_ic_home_icon"/>
 
-    <item android:id="@+id/calendar"
-        android:title="@string/label_calendar"
+    <item android:id="@+id/main_registered"
+        android:title="@string/label_main_registered"
         android:icon="@drawable/bottom_ic_calendar_icon"/>
 
     <item android:id="@+id/notifs"
