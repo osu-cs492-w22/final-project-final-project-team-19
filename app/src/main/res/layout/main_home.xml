@@ -9,6 +9,26 @@
     android:layout_marginBottom="65dp"
     tools:context=".ui.MainHomeFragment">
 
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/nav_home_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:background="?attr/colorPrimary"-->
+<!--            app:itemTextColor="@drawable/register_nav_selector"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:paddingBottom="4dp"-->
+<!--            app:itemTextAppearanceActive="@style/navView.Active"-->
+<!--            app:itemTextAppearanceInactive="@style/navView"-->
+<!--            app:menu="@menu/menu_register" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -17,7 +17,6 @@
     <fragment android:id="@+id/main_registered"
         android:name="com.example.honorscollegeapp.ui.MainRegisteredFragment"
         android:label="@string/label_main_registered">
-<!--        tools:layout="@layout/main_registered">-->
         <action
             android:id="@+id/navigate_to_event_detail"
             app:destination="@id/event_detail" />
@@ -29,8 +28,7 @@
         tools:layout="@layout/page_event_detail">
         <argument
             android:name="event"
-            app:argType="com.example.honorscollegeapp.data.CalendarEvent"
-            />
+            app:argType="com.example.honorscollegeapp.data.CalendarEvent" />
     </fragment>
 
     <fragment android:id="@+id/myprofile"
@@ -57,11 +55,11 @@
         tools:layout="@layout/main_home">
     </fragment>
 
-<!--    <fragment android:id="@+id/calendar"-->
-<!--        android:name="com.example.honorscollegeapp.ui.CalendarFragment"-->
-<!--        android:label="@string/label_calendar"-->
-<!--        tools:layout="@layout/page_calendar">-->
-<!--    </fragment>-->
+    <fragment android:id="@+id/calendar"
+        android:name="com.example.honorscollegeapp.ui.CalendarFragment"
+        android:label="@string/label_calendar"
+        tools:layout="@layout/page_calendar">
+    </fragment>
 
     <fragment android:id="@+id/notifs"
         android:name="com.example.honorscollegeapp.ui.NotifsFragment"

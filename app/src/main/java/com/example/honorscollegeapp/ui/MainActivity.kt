@@ -61,8 +61,20 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         findViewById<NavigationView>(R.id.nav_top_view).setupWithNavController(navController)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.nav_bottom_view)
-        bottomNavigationView.setupWithNavController(navController)
+        findViewById<BottomNavigationView>(R.id.nav_bottom_view).setupWithNavController(navController)
+
+//        findViewById<BottomNavigationView>(R.id.nav_register_view).setupWithNavController(navController)
+
+//        findViewById<BottomNavigationView>(R.id.nav_home_view).setupWithNavController(navController)
+
+//        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.nav_bottom_view)
+//        bottomNavigationView.setupWithNavController(navController)
+//
+//        val registerNavigationView = findViewById<BottomNavigationView>(R.id.nav_register_view)
+//        registerNavigationView.setupWithNavController(navController)
+//
+//        val homeNavigationView = findViewById<BottomNavigationView>(R.id.nav_home_view)
+//        homeNavigationView.setupWithNavController(navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {
