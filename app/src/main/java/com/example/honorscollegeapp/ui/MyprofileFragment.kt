@@ -38,6 +38,10 @@ class MyprofileFragment : Fragment(R.layout.page_myprofile) {
         super.onCreate(savedInstanceState)
         imageView = view.findViewById(R.id.image_view)
         captureButton = view.findViewById(R.id.btn_capture)
+        if(mCurrentPhotoPath != null){
+            var bitmap: Bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath)
+            imageView.setImageBitmap(bitmap)
+        }
         captureButton.setOnClickListener(View.OnClickListener {
             takePicture()
         })
@@ -65,9 +69,11 @@ class MyprofileFragment : Fragment(R.layout.page_myprofile) {
     }
 
     private fun takePicture() {
-
+        val file_prefix = "profile_photo"
+        val file_suffix = ".jpg"
         val intent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        val file: File = createFile()
+        val file: File = createFile(file_prefix, file_suffix)
+
         val uri = FileProvider.getUriForFile(
             Objects.requireNonNull(requireContext()),
             BuildConfig.APPLICATION_ID + ".provider", file);
@@ -103,13 +109,12 @@ class MyprofileFragment : Fragment(R.layout.page_myprofile) {
 //    }
 
     @Throws(IOException::class)
-    private fun createFile(): File {
+    private fun createFile(filename: String, suffix: String): File {
         // Create an image file name
-        val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
         val storageDir: File? = requireContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         return File.createTempFile(
-            "JPEG_${timeStamp}_", /* prefix */
-            ".jpg", /* suffix */
+            filename, /* prefix */
+            suffix, /* suffix */
             storageDir /* directory */
         ).apply {
             // Save a file: path for use with ACTION_VIEW intents
