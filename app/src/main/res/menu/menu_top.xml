@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/main_registered"
+        android:title="@string/label_main_registered"
+        android:icon="@drawable/ic_action_bookmark_on"/>
+
     <item android:id="@+id/myprofile"
         android:title="@string/label_myprofile"
         android:icon="@drawable/top_ic_profile_icon"/>
