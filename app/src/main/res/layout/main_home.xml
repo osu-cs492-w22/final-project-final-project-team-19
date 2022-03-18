@@ -9,26 +9,6 @@
     android:layout_marginBottom="65dp"
     tools:context=".ui.MainHomeFragment">
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--            android:id="@+id/nav_home_view"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="52dp"-->
-<!--            android:background="?attr/colorPrimary"-->
-<!--            app:itemTextColor="@drawable/register_nav_selector"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:paddingBottom="4dp"-->
-<!--            app:itemTextAppearanceActive="@style/navView.Active"-->
-<!--            app:itemTextAppearanceInactive="@style/navView"-->
-<!--            app:menu="@menu/menu_register" />-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,41 +54,3 @@
 
     </FrameLayout>
 </LinearLayout>
-
-
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:orientation="vertical"-->
-<!--    tools:context=".ui.MainHomeFragment">-->
-
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/rv_search_results"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/tv_loading_error"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="16dp"-->
-<!--            android:textAppearance="?attr/textAppearanceBody1"-->
-<!--            android:textColor="?attr/colorError"-->
-<!--            android:visibility="invisible" />-->
-
-<!--        <com.google.android.material.progressindicator.CircularProgressIndicator-->
-<!--            android:id="@+id/loading_indicator"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:indeterminate="true"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:visibility="invisible" />-->
-<!--    </FrameLayout>-->
-<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
