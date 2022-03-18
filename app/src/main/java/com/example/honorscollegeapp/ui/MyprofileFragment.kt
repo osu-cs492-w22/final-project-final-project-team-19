@@ -80,7 +80,7 @@ class MyprofileFragment : Fragment(R.layout.page_myprofile) {
 
 
         intent.putExtra(MediaStore.EXTRA_OUTPUT, uri)
-        startActivity(intent)
+        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE)
 
     }
 
