@@ -1,6 +1,5 @@
 package com.example.honorscollegeapp.ui
 
-
 import android.Manifest.permission.CAMERA
 import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.app.Activity
@@ -36,6 +35,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import java.util.*
+
 /* Taking photo within app
 * https://kotlincodes.com/kotlin/camera-intent-with-kotlin-android/
 * https://stackoverflow.com/questions/56598480/couldnt-find-meta-data-for-provider-with-authority
@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
-        findViewById<NavigationView>(R.id.nav_top_view).setupWithNavController(navController)
 
+        findViewById<NavigationView>(R.id.nav_top_view).setupWithNavController(navController)
         findViewById<BottomNavigationView>(R.id.nav_bottom_view).setupWithNavController(navController)
 
 //        findViewById<BottomNavigationView>(R.id.nav_register_view).setupWithNavController(navController)
@@ -108,5 +108,4 @@ class MainActivity : AppCompatActivity() {
     private fun requestPermission() {
         ActivityCompat.requestPermissions(this, arrayOf(READ_EXTERNAL_STORAGE, CAMERA), PERMISSION_REQUEST_CODE)
     }
-
 }
